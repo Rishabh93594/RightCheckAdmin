@@ -78,6 +78,12 @@ export const DashboardLayout = ({ onLogout }: DashboardLayoutProps) => {
               <LogOut size={18} /> Log Out
             </button>
           </div>
+          <div className="pt-4 px-4 border-t border-slate-50">
+             <p className="text-[10px] font-bold text-slate-300 uppercase tracking-widest leading-relaxed">
+                Designed & Developed by<br/>
+                <a href="https://kyptronix.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Kyptronix LLP</a>
+             </p>
+          </div>
         </div>
       </aside>
 
