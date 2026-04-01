@@ -27,7 +27,7 @@ function App() {
       setIsLoggedIn(true);
       setLoginError('');
     } else {
-      setLoginError('Invalid credentials. Please use admin / admin123');
+      setLoginError('Invalid username or password. Please try again.');
     }
   };
 
