@@ -56,12 +56,19 @@
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e2e8f0;
-  border: 4px solid #f8fafc;
+  background: hsl(var(--primary) / 0.2);
+  border: 3px solid #f8fafc;
+  background-clip: padding-box;
   border-radius: 99px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #cbd5e1;
+  background: hsl(var(--primary) / 0.4);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary) / 0.2) transparent;
 }
 
 /* Utilities */
