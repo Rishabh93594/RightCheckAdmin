@@ -5,6 +5,7 @@ import {
   User, 
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Logo from "./assets/RightCheck.png";
 
 // Layout & Pages
 import { DashboardLayout } from './components/layout/DashboardLayout';
@@ -46,8 +47,8 @@ function App() {
           <div className="bg-white border border-slate-100 rounded-[32px] overflow-hidden shadow-2xl">
             {/* Header / Logo Section */}
             <div className="p-10 pb-6 text-center border-b border-slate-50">
-              <div className="w-16 h-16 rounded-2xl bg-primary mx-auto mb-6 flex items-center justify-center shadow-lg shadow-primary/30">
-                <span className="text-white font-bold text-2xl">RC</span>
+              <div className="mb-4 h-24 flex items-center justify-center overflow-hidden">
+                <img src={Logo} alt="RightCheck Logo" className="w-96 max-w-none h-auto object-contain" />
               </div>
               <h1 className="text-2xl font-bold tracking-tight text-slate-900 mb-1">RightCheck Admin</h1>
               <p className="text-sm text-slate-500">Log in to manage your system</p>

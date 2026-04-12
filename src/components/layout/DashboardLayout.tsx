@@ -13,6 +13,7 @@ import {
   Plus
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "../../assets/RightCheck.png";
 
 const sidebarLinks = [
   { icon: <LayoutDashboard size={20} />, label: "Dashboard", href: "/" },
@@ -33,9 +34,9 @@ export const DashboardLayout = ({ onLogout }: DashboardLayoutProps) => {
     <div className="flex min-h-screen bg-[#f8fafc] text-slate-900 font-sans">
       {/* Sidebar - Desktop */}
       <aside className="hidden lg:flex w-64 bg-white border-r border-slate-200 flex-col sticky top-0 h-screen z-30">
-        <div className="p-6 border-b border-slate-100 mb-6">
-          <Link to="/" className="flex items-center gap-2">
-            <span className="font-black text-xl tracking-tight text-slate-900">Right<span className="text-primary">Check</span></span>
+        <div className="p-4 border-b border-slate-100 mb-2">
+          <Link to="/" className="flex items-center h-12 overflow-hidden -ml-2">
+            <img src={Logo} alt="RightCheck Logo" className="w-56 max-w-none h-auto object-contain" />
           </Link>
           <div className="mt-4 flex items-center gap-2">
              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -93,7 +94,9 @@ export const DashboardLayout = ({ onLogout }: DashboardLayoutProps) => {
         <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-6 lg:px-10 sticky top-0 z-20 shrink-0">
           <div className="flex items-center gap-4 lg:hidden">
             <button onClick={() => setIsMobileMenuOpen(true)} className="p-2 text-slate-500"><Menu size={24} /></button>
-            <span className="font-black text-lg tracking-tight">Right<span className="text-primary">Check</span></span>
+            <div className="h-8 overflow-hidden flex items-center">
+               <img src={Logo} alt="RightCheck Logo" className="w-32 max-w-none h-auto object-contain" />
+            </div>
           </div>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -156,7 +159,9 @@ export const DashboardLayout = ({ onLogout }: DashboardLayoutProps) => {
                className="fixed inset-y-0 left-0 w-72 bg-white z-50 lg:hidden shadow-2xl flex flex-col pt-6"
             >
                <div className="flex items-center justify-between px-6 mb-8">
-                  <span className="font-black text-xl tracking-tight leading-none">Right<span className="text-primary">Check</span></span>
+                  <div className="h-10 overflow-hidden flex items-center -ml-2">
+                     <img src={Logo} alt="RightCheck Logo" className="w-40 max-w-none h-auto object-contain" />
+                  </div>
                   <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 text-slate-400"><X size={24} /></button>
                </div>
                <nav className="flex-1 px-4 space-y-1">
